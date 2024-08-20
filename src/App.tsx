@@ -1,23 +1,16 @@
-import { useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SignIn from "./pages/sign-in";
+import Todos from "./pages/todos";
 
 function App() {
-  useEffect(() => {
-    console.log("aa");
-
-    fetch("api/v1/auth", { method: "POST" })
-      .then(async (res) => {
-        const data = await res.json();
-        console.log({ data });
-      })
-      .catch(() => {
-        console.log("catch");
-      })
-      .finally(() => {
-        console.log("finally");
-      });
-  }, []);
-
-  return <div>app</div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SignIn />} />
+        <Route path="/todos" element={<Todos />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
