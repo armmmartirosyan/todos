@@ -1,3 +1,4 @@
+import { RefreshTokenApiBody } from "../types/api-types";
 import { api } from "./axios-config";
 
 export class AuthApis {
@@ -5,7 +6,7 @@ export class AuthApis {
     return await api.post("api/v1/auth");
   }
 
-  static async refresh(body: { refreshToken: string; id: string }) {
+  static async refresh(body: RefreshTokenApiBody) {
     return await api.post("api/v1/auth/refresh", body);
   }
 }

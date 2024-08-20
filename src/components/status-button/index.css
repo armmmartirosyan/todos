@@ -1,0 +1,41 @@
+.status_button {
+  width: 80px;
+  height: 36px;
+  border-radius: 25px;
+  border: 1px solid;
+  color: #24252c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.5px;
+  background-color: transparent;
+  font-family: Lexend Deca;
+  cursor: pointer;
+}
+
+.status_button.pending {
+  border-color: #fcbf49;
+}
+
+.status_button.done {
+  border-color: #588157;
+}
+
+.status_button.will_not_do {
+  border-color: #d62828;
+}
+
+.status_button.active-status {
+  color: white;
+}
+
+.status_button.pending.active-status {
+  background-color: #fcbf49;
+}
+
+.status_button.done.active-status {
+  background-color: #588157;
+}
+
+.status_button.will_not_do.active-status {
+  background-color: #d62828;
+}

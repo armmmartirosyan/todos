@@ -1,6 +1,6 @@
 import { useLayoutEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { UserInfoProvider } from "../../providers/user-info-provider";
+import { UserInfoProvider } from "../../providers";
 import { AuthApis } from "../../api/auth-apis";
 import { api } from "../../api";
 

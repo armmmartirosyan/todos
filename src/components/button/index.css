@@ -1,0 +1,25 @@
+.button {
+  text-align: center;
+  min-width: 121px;
+  height: 35px;
+  outline: 1px solid;
+  border: 0;
+  font-family: Lexend Deca;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.button.primary {
+  background-color: #5f33e1;
+  outline-color: #5f33e1;
+  color: #fff;
+}
+
+.button.secondary {
+  background-color: #fff;
+  outline-color: #5f33e1;
+  color: #5f33e1;
+}
