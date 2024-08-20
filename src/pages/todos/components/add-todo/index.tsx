@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { Panel, PlusButton } from "../../../../components";
 import { useCreateTodo } from "../../../../hooks/request-hooks";
-import { useOpenClose } from "../../../../hooks/utility-hooks/use-open-close";
+import { useOpenClose } from "../../../../hooks/utility-hooks";
 
 export function AddTodo() {
   const buttonContainerRef = useRef<HTMLDivElement>(null);

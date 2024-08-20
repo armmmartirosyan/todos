@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { ReactComponent as EditIcon } from "../../../../../assets/icons/edit.svg";
-import { useOpenClose } from "../../../../../hooks/utility-hooks/use-open-close";
+import { useOpenClose } from "../../../../../hooks/utility-hooks";
 import { TodoEditProps } from "../../../../../types/component-types";
 import { useEditTodo } from "../../../../../hooks/request-hooks";
 import { Panel } from "../../../../../components";

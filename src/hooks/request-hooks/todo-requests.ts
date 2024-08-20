@@ -1,8 +1,13 @@
 import { useMutation, useQuery, useQueryClient } from "react-query";
 import { TodoApis } from "../../api";
+import { UserInfoProvider } from "../../providers";
 
 export const useGetTodos = () => {
-  return useQuery(["todo-list"], TodoApis.getTodoList);
+  const { accessToken } = UserInfoProvider.getUserInfo();
+
+  return useQuery(["todo-list"], TodoApis.getTodoList, {
+    enabled: !!accessToken,
+  });
 };
 
 export const useCreateTodo = () => {

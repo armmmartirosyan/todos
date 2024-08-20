@@ -1,8 +1,10 @@
-import { requireAuth } from "../../hoc";
+import { useAuthenticate } from "../../hooks/request-hooks";
 import { TodoList, AddTodo } from "./components";
 import "./index.css";
 
-function Todos() {
+export default function Todos() {
+  useAuthenticate();
+
   return (
     <div className="wrapper">
       <h1 className="title">My To-Do</h1>
@@ -11,5 +13,3 @@ function Todos() {
     </div>
   );
 }
-
-export default requireAuth(Todos);
