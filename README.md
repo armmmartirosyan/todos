@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Todo List Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple Todo List application built with React JS and React Query. It allows users to create, edit, switch the status, and delete todos. The available statuses for a todo are "Pending", "Done", and "Won't do".
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **See the list of todos**: You can see all tods created by yourself.
+- **Create a Todo**: Add a new todo item to your list.
+- **Edit a Todo**: Modify the details of an existing todo.
+- **Switch Status**: Change the status of a todo to "Pending", "Done", or "Won't do".
+- **Delete a Todo**: Remove a todo from the list.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React JS**: A JavaScript library for building user interfaces.
+- **React Query**: A data-fetching and state management library for React applications.
+- **TypeScript**: A statically typed superset of JavaScript that adds type safety to the codebase.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+Follow the instructions below to set up and run the project locally.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js and npm installed on your machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/armmmartirosyan/todos
+   ```
+2. **Navigate to the project directory**:
+   ```bash
+   cd todos
+   ```
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Running the Application
 
-### `npm run eject`
+To start the application, run the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will start the development server, and you can view the application in your browser at `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contact
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+For any inquiries or issues, please reach out to [armenmartirosyan020@gmail.com](mailto:armenmartirosyan020@gmail.com).

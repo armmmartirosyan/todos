@@ -1,6 +1,6 @@
 import { useState, useCallback, RefObject } from "react";
+import { UseOpenCloseReturn } from "@/types/hook-types";
 import { useOutsideClick } from "./use-outside-click";
-import { UseOpenCloseReturn } from "../../types/hook-types";
 
 export function useOpenClose(ref: RefObject<any>): UseOpenCloseReturn {
   const [open, setOpen] = useState(false);

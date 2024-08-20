@@ -1,4 +1,4 @@
-import { RefreshTokenApiBody } from "../types/api-types";
+import { RefreshTokenApiBody } from "@/types/api-types";
 import { api } from "./axios-config";
 
 export class AuthApis {

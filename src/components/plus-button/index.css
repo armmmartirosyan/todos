@@ -4,7 +4,7 @@
   height: 50px;
   min-height: 50px;
   border-radius: 50%;
-  background-color: #5f33e1;
+  background-color: var(--lilac);
   border: 0;
   cursor: pointer;
 }

@@ -1,6 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from "react-query";
-import { TodoApis } from "../../api";
-import { UserInfoProvider } from "../../providers";
+import { UserInfoProvider } from "@/providers";
+import { TodoApis } from "@/api";
 
 export const useGetTodos = () => {
   const { accessToken } = UserInfoProvider.getUserInfo();

@@ -3,19 +3,18 @@
   height: 40px;
   border-radius: 8px;
   padding: 12px 16px;
-  background-color: #fcfaff;
+  background-color: var(--approx);
   border: 0;
   outline: 0;
-  color: #505050;
+  color: var(--dark-liver);
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  font-family: Lexend Deca;
 }
 
 .input::placeholder {
   font-family: Lexend Deca;
-  color: #828282;
+  color: var(--old-silver);
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;

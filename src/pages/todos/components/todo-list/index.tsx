@@ -1,7 +1,7 @@
-import { useGetTodos } from "../../../../hooks/request-hooks";
-import { WholePageLoading } from "../../../../components";
-import { Todo } from "../../../../types";
+import { useGetTodos } from "@/hooks/request-hooks";
+import { WholePageLoading } from "@/components";
 import { TodoItem } from "../todo-item";
+import { Todo } from "@/types";
 
 export function TodoList() {
   const { data, isFetching } = useGetTodos();

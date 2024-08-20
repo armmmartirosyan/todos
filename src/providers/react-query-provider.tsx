@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "react-query";
-import { OnlyChildrenProps } from "../types";
+import { OnlyChildrenProps } from "@/types";
 
 export function ReactQueryProvider({ children }: OnlyChildrenProps) {
   const queryClient = new QueryClient({

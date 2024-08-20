@@ -1,7 +1,7 @@
 import { MouseEvent, useCallback } from "react";
-import { TodoItemProps } from "../../../../types/component-types";
 import { TodoEdit, TodoStatuses, TodoTrash } from "./components";
-import { todoEditDto, todoInfoDto } from "../../../../utils";
+import { TodoItemProps } from "@/types/component-types";
+import { todoEditDto, todoInfoDto } from "@/utils";
 import { useToggleOpenClose } from "./hooks";
 import "./index.css";
 

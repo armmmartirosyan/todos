@@ -1,5 +1,5 @@
-import { ButtonProps } from "../../types/component-types";
-import { ButtonVariants } from "../../types";
+import { ButtonProps } from "@/types/component-types";
+import { ButtonVariants } from "@/types";
 import "./index.css";
 
 export function Button({

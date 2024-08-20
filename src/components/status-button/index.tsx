@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from "react";
-import { useSwitchTodoStatus } from "../../hooks/request-hooks";
-import { StatusButtonProps } from "../../types/component-types";
+import { useSwitchTodoStatus } from "@/hooks/request-hooks";
+import { StatusButtonProps } from "@/types/component-types";
 import "./index.css";
 
 export function StatusButton({ status, todoInfo }: StatusButtonProps) {

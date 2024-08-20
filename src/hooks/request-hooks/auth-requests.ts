@@ -1,7 +1,7 @@
 import { AxiosResponse } from "axios";
 import { useQuery } from "react-query";
-import { AuthApis } from "../../api/auth-apis";
-import { UserInfoProvider } from "../../providers";
+import { UserInfoProvider } from "@/providers";
+import { AuthApis } from "@/api";
 
 export const useAuthenticate = () => {
   const { accessToken, refreshToken } = UserInfoProvider.getUserInfo();

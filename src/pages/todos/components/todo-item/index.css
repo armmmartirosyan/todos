@@ -3,13 +3,14 @@
   width: 100%;
   min-height: 63px;
   border-radius: 15px;
-  box-shadow: 0px 4px 32px 0px #0000000a;
+  box-shadow: 0 4px 32px 0 var(--shadow);
   padding: 16px 17px 16px 32px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  margin-bottom: 19px;
 }
 
 .todo_title {
@@ -17,7 +18,7 @@
   font-weight: 400;
   line-height: 11.25px;
   margin-bottom: 2px;
-  color: #6e6a7c;
+  color: var(--light-grey);
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -31,7 +32,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 17.5px;
-  color: #24252c;
+  color: var(--dark-guanmetal);
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -70,17 +71,17 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  box-shadow: 0px 0px 2px 0px #00000040;
+  box-shadow: 0 0 2px 0 var(--shadow-dark);
 }
 
 .todo_status_indicator.done {
-  background-color: #588157;
+  background-color: var(--green);
 }
 
 .todo_status_indicator.wontdo {
-  background-color: #d62828;
+  background-color: var(--red);
 }
 
 .todo_status_indicator.pending {
-  background-color: #fcbf49;
+  background-color: var(--yellow);
 }

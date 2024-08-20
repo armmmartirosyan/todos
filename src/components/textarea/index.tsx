@@ -1,4 +1,4 @@
-import { TextareaProps } from "../../types/component-types";
+import { TextareaProps } from "@/types/component-types";
 import "./index.css";
 
 export function Textarea({ className = "", ...rest }: TextareaProps) {

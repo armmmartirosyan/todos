@@ -5,10 +5,10 @@ import {
   useCallback,
   useState,
 } from "react";
-import { TodoPanelProps } from "../../types/component-types";
-import { Button, Input, Textarea } from "../index";
-import { ButtonVariants } from "../../types";
+import { TodoPanelProps } from "@/types/component-types";
+import { Button, Input, Textarea } from "@/components";
 import { useDisabled } from "./use-disabled";
+import { ButtonVariants } from "@/types";
 import "./index.css";
 
 export function Panel({ onClose, useAction, oldTodoInfo }: TodoPanelProps) {

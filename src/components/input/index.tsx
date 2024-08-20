@@ -1,4 +1,4 @@
-import { InputProps } from "../../types/component-types";
+import { InputProps } from "@/types/component-types";
 import "./index.css";
 
 export function Input({ className = "", ...rest }: InputProps) {

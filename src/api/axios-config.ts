@@ -1,6 +1,6 @@
 import axios from "axios";
-import { UserInfoProvider } from "../providers";
 import { AuthApis } from "./auth-apis";
+import { UserInfoProvider } from "../providers";
 
 const { accessToken } = UserInfoProvider.getUserInfo();
 

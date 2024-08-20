@@ -1,8 +1,8 @@
 import { UseMutationResult } from "react-query";
 import { ButtonHTMLAttributes } from "react";
 import { AxiosResponse } from "axios";
-import { ButtonVariants, Todo, TodoStatusItem } from "./index";
 import { TodoEditDto } from "./utils-types";
+import { ButtonVariants, Todo, TodoStatusItem } from "./index";
 
 type Todoinfo = { id: number; status: string };
 

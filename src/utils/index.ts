@@ -1,5 +1,5 @@
-import { Todo } from "../types";
-import { TodoEditDto, TodoInfoDto } from "../types/utils-types";
+import { Todo } from "@/types";
+import { TodoEditDto, TodoInfoDto } from "@/types/utils-types";
 
 export function todoInfoDto(todo: Todo): TodoInfoDto {
   return { id: todo.id, status: todo.status };

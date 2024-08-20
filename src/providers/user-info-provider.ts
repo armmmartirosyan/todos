@@ -1,12 +1,12 @@
-import { USER_INFO_SESSION_KEY } from "../constants";
-import { UserInfo } from "../types";
+import { USER_INFO_SESSION_KEY } from "@/constants";
+import { UserInfo } from "@/types";
 
 export class UserInfoProvider {
   static setUserInfo(info: UserInfo) {
     localStorage.setItem(USER_INFO_SESSION_KEY, JSON.stringify(info));
   }
 
-  static getUserInfo(): any {
+  static getUserInfo(): UserInfo {
     return JSON.parse(localStorage.getItem(USER_INFO_SESSION_KEY) || "{}");
   }
 

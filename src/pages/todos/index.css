@@ -1,5 +1,5 @@
 .wrapper {
-  width: 375px;
+  min-width: 375px;
   height: 100dvh;
   margin: 0 auto;
   display: flex;

@@ -1,4 +1,4 @@
-import { useAuthenticate } from "../../hooks/request-hooks";
+import { useAuthenticate } from "@/hooks/request-hooks";
 import { TodoList, AddTodo } from "./components";
 import "./index.css";
 

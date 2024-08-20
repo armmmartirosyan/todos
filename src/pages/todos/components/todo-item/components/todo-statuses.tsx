@@ -1,7 +1,7 @@
-import { StatusButton } from "../../../../../components";
-import { TODO_STATUSES } from "../../../../../constants";
-import { TodoStatusItem } from "../../../../../types";
-import { TodoStatusesProps } from "../../../../../types/component-types";
+import { TodoStatusItem } from "@/types";
+import { TODO_STATUSES } from "@/constants";
+import { StatusButton } from "@/components";
+import { TodoStatusesProps } from "@/types/component-types";
 
 export function TodoStatuses({ todoInfo }: TodoStatusesProps) {
   return (

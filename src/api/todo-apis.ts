@@ -2,7 +2,7 @@ import {
   CreateTodoApiBody,
   EditTodoApiBody,
   SwitchTodoStatusApiBody,
-} from "../types/api-types";
+} from "@/types/api-types";
 import { api } from "./axios-config";
 
 export class TodoApis {
