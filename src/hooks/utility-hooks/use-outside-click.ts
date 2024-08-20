@@ -1,8 +1,5 @@
-"use client";
-
 import { useEffect } from "react";
-
-import { UseOutsideClickProps } from "../../types";
+import { UseOutsideClickProps } from "../../types/hook-types";
 
 export function useOutsideClick({
   ref,

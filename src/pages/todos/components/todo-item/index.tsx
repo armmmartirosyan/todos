@@ -1,15 +1,12 @@
 import { MouseEvent, useCallback } from "react";
-import { Todo } from "../../../../types";
-import { useDelete } from "../../../../hooks/request-hooks";
-import { ReactComponent as EditIcon } from "../../../../assets/icons/edit.svg";
-import { ReactComponent as TrashIcon } from "../../../../assets/icons/trash.svg";
+import { TodoItemProps } from "../../../../types/component-types";
+import { TodoEdit, TodoStatuses, TodoTrash } from "./components";
+import { todoEditDto, todoInfoDto } from "../../../../utils";
 import { useToggleOpenClose } from "./hooks";
-import { TodoStatuses } from "./components";
 import "./index.css";
 
-export function TodoItem({ todo }: { todo: Todo }) {
+export function TodoItem({ todo }: TodoItemProps) {
   const { open, toggleOpenClose } = useToggleOpenClose();
-  const { mutate: deleteTodo, isLoading: isLoadingDelete } = useDelete();
 
   const handleActions = useCallback((e: MouseEvent<HTMLDivElement>) => {
     e.stopPropagation();
@@ -23,11 +20,11 @@ export function TodoItem({ todo }: { todo: Todo }) {
         <p className="todo_desc">{todo.description}</p>
       </div>
       <div className="todo_actions" onClick={handleActions}>
-        <EditIcon className="todo_edit" />
-        <TrashIcon className="todo_trash" onClick={() => deleteTodo(todo.id)} />
+        <TodoEdit todoData={todoEditDto(todo)} />
+        <TodoTrash todoId={todo.id} />
       </div>
 
-      {open && <TodoStatuses todoInfo={{ id: todo.id, status: todo.status }} />}
+      {open && <TodoStatuses todoInfo={todoInfoDto(todo)} />}
     </article>
   );
 }

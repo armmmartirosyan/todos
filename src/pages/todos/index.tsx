@@ -1,5 +1,5 @@
 import { requireAuth } from "../../hoc";
-import { TodoList, AddButton } from "./components";
+import { TodoList, AddTodo } from "./components";
 import "./index.css";
 
 function Todos() {
@@ -7,7 +7,7 @@ function Todos() {
     <div className="wrapper">
       <h1 className="title">My To-Do</h1>
       <TodoList />
-      <AddButton />
+      <AddTodo />
     </div>
   );
 }

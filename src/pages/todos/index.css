@@ -26,27 +26,3 @@
   width: 100%;
   height: 100%;
 }
-
-.todo_panel {
-  position: absolute;
-  bottom: 90px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 331px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 32px 0px #0000000a;
-  padding: 22px 22px 13px 13px;
-  background-color: #ffffff;
-}
-
-.todo_input {
-  margin-bottom: 11px;
-}
-
-.todo_panel_actions {
-  margin-top: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}

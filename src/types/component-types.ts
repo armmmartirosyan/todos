@@ -1,5 +1,10 @@
+import { UseMutationResult } from "react-query";
 import { ButtonHTMLAttributes } from "react";
-import { ButtonVariants, TodoStatusItem } from "./index";
+import { AxiosResponse } from "axios";
+import { ButtonVariants, Todo, TodoStatusItem } from "./index";
+import { TodoEditDto } from "./utils-types";
+
+type Todoinfo = { id: number; status: string };
 
 export interface PlusButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement> {}
@@ -19,5 +24,24 @@ export interface ButtonProps extends PlusButtonProps {
 
 export type StatusButtonProps = {
   status: TodoStatusItem;
-  todoInfo: { id: number; status: string };
+  todoInfo: Todoinfo;
+};
+
+export type TodoItemProps = { todo: Todo };
+
+export type TodoStatusesProps = {
+  todoInfo: Todoinfo;
+};
+
+export type TodoEditProps = { todoData: TodoEditDto };
+
+export type TodoPanelProps = {
+  onClose: VoidFunction;
+  oldTodoInfo?: TodoEditDto;
+  useAction: () => UseMutationResult<
+    AxiosResponse<any, any>,
+    unknown,
+    any,
+    unknown
+  >;
 };

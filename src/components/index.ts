@@ -4,3 +4,4 @@ export { Textarea } from "./textarea";
 export { Loading } from "./loading";
 export { Button } from "./button";
 export { Input } from "./input";
+export { Panel } from "./panel";

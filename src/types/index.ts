@@ -1,5 +1,5 @@
 import { InternalAxiosRequestConfig } from "axios";
-import { ReactNode, RefObject } from "react";
+import { ReactNode } from "react";
 
 export type UserInfo = {
   accessToken: string;
@@ -10,13 +10,6 @@ export type UserInfo = {
 export interface AxiosRequestConfig extends InternalAxiosRequestConfig<any> {
   _retry?: boolean;
 }
-
-export type UseOutsideClickProps = {
-  ref: RefObject<HTMLElement>;
-  // eslint-disable-next-line no-unused-vars
-  callback: (e: MouseEvent) => void;
-  parent?: HTMLElement;
-};
 
 export enum ButtonVariants {
   PRIMARY = "primary",
