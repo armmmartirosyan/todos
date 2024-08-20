@@ -9,6 +9,7 @@
   box-shadow: 0px 4px 32px 0px #0000000a;
   padding: 22px 22px 13px 13px;
   background-color: #ffffff;
+  z-index: 2;
 }
 
 .panel_input {

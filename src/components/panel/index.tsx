@@ -24,7 +24,7 @@ export function Panel({ onClose, useAction, oldTodoInfo }: TodoPanelProps) {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
-    if (disabled) return;
+    if (disabled || isLoading) return;
 
     const requestBody = {
       id: oldTodoInfo?.id || undefined,
@@ -69,7 +69,7 @@ export function Panel({ onClose, useAction, oldTodoInfo }: TodoPanelProps) {
         <Button variant={ButtonVariants.SECONDARY} onClick={handleClose}>
           Cancel
         </Button>
-        <Button disabled={disabled}>Done</Button>
+        <Button disabled={disabled || isLoading}>Done</Button>
       </div>
     </form>
   );

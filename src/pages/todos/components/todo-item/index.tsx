@@ -15,7 +15,7 @@ export function TodoItem({ todo }: TodoItemProps) {
   return (
     <article className="todo_item" onClick={toggleOpenClose}>
       <div className={`todo_status_indicator ${todo.status}`} />
-      <div>
+      <div className="todo_text_block">
         <h2 className="todo_title">{todo.title}</h2>
         <p className="todo_desc">{todo.description}</p>
       </div>

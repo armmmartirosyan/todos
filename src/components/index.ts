@@ -1,3 +1,4 @@
+export { WholePageLoading } from "./whole-page-loading";
 export { StatusButton } from "./status-button";
 export { PlusButton } from "./plus-button";
 export { Textarea } from "./textarea";

@@ -1,5 +1,5 @@
 import "./index.css";
 
-export function Loading() {
-  return <div className="loading"></div>;
+export function Loading({ className = "" }) {
+  return <div className={`loading ${className}`}></div>;
 }

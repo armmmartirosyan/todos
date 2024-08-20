@@ -9,6 +9,19 @@
   animation: loading-spinner 1s infinite linear;
 }
 
+.whole_page_loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(238, 238, 238, 0.178);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
 @keyframes loading-spinner {
   100% {
     transform: rotate(1turn);
