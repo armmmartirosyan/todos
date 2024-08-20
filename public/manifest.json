@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "TODOS",
+  "name": "This is a project where you can save your very important notes.",
   "icons": [
     {
       "src": "favicon.ico",
